@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#FFF">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+   <ViewFlipper
+       android:id="@+id/viewFlipperSlider"
+       android:layout_width="0dp"
+       android:layout_height="190dp"
+       android:background="@drawable/slide1"
+       android:padding="10dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+
+      <RelativeLayout
+          android:id="@+id/relativeLay1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/viewFlipperSlider"
+          app:layout_constraintVertical_bias="0.0">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerViewHori1"
+             android:layout_width="match_parent"
+             android:layout_height="70dp" />
+
+          <ProgressBar
+              android:id="@+id/prgbar1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:visibility="gone"></ProgressBar>
+
+      </RelativeLayout>
+
+
+       <TextView
+           android:id="@+id/textView13"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:text="OFFRES LES PLUS POPULAIRE"
+           android:textColor="#2699FB"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/relativeLay1"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <RelativeLayout
+           android:id="@+id/relativeLay2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView13"
+           app:layout_constraintVertical_bias="0.0">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerViewHori2"
+               android:layout_width="match_parent"
+               android:layout_height="70dp" />
+
+           <ProgressBar
+               android:id="@+id/prgbar2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:visibility="gone"></ProgressBar>
+
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/textView14"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="NOUVELLES OFFRES"
+           android:textColor="#2699FB"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/relativeLay2"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <RelativeLayout
+           android:id="@+id/relativeLay3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView14"
+           app:layout_constraintVertical_bias="0.0">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerViewHori3"
+               android:layout_width="match_parent"
+               android:layout_height="70dp" />
+
+           <ProgressBar
+               android:id="@+id/prgbar3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:visibility="gone"></ProgressBar>
+
+       </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

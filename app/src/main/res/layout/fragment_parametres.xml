@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.parametres.Parametres"
+    tools:layout_editor_absoluteY="81dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/para">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="PARAMETRE"
+            android:textColor="#2699FB"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="410dp"
+            android:background="@drawable/border_cercle"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/proPic"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                tools:src="@mipmap/ic_launcher_round" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/proName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layPic" />
+
+        <EditText
+            android:id="@+id/proPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="PRENOM"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/proName" />
+
+        <EditText
+            android:id="@+id/proGsm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="GSM"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proPrenom" />
+
+        <EditText
+            android:id="@+id/proMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/proGsm" />
+
+
+        <EditText
+            android:id="@+id/proDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="DATE DE NAISSANCE"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/proMail" />
+
+
+        <Button
+            android:id="@+id/proBtnMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:text="MODIFIER"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

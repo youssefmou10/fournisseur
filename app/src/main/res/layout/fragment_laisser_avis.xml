@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.laisserAvis.LaisserAvis">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center|center_horizontal|center_vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RatingBar
+                android:id="@+id/ratingBarComn"
+                style="@style/RatingBarBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="60dp"
+                android:numStars="5"
+                android:rating="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/laisserComn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="32dp"
+                android:hint="Laisser un commentaire..."
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/theone"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBarComn"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/border_cercle"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/laisserComn">
+
+                <ImageButton
+                    android:id="@+id/saveComn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/flesh_s" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

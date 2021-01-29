@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.myCompte.Compte">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background_gradien"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/profileLay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_cercle"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvnom0"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/tvemail0"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnom0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvgsm0"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/phone_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvnom1"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:text="Nom Complet"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvnom0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/tvemail1"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvemail0"
+        app:layout_constraintTop_toBottomOf="@+id/tvnom1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvgsm1"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="32dp"
+        android:text="Gsm"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvgsm0"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/prgbarcompte"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <ImageButton
+        android:id="@+id/btnLogOut"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="32dp"
+        android:background="#fff"
+        android:src="@drawable/sign_out_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="32dp"
+        android:background="#fff"
+        android:src="@drawable/update_64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

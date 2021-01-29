@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pfeupdated.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/f_activerCompteSal"
+        android:name="com.example.pfeupdated.ui.activerCompte.ActiverCompte"
+        android:label="@string/menu_activer_compte"
+        tools:layout="@layout/fragment_activer_compte" />
+
+    <fragment
+        android:id="@+id/f_seConnecter"
+        android:name="com.example.pfeupdated.ui.seConnecter.SeConnecterFragment"
+        android:label="@string/menu_seconnecter"
+        tools:layout="@layout/fragment_seconnecter" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.pfeupdated.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.pfeupdated.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.pfeupdated.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/f_notifications"
+        android:name="com.example.pfeupdated.ui.notifications.notifications"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/f_test"
+        android:name="com.example.pfeupdated.FragmentFortest"
+        android:label="For test"
+        tools:layout="@layout/fragment_fragment_fortest" />
+
+    <fragment
+        android:id="@+id/f_test2"
+        android:name="com.example.pfeupdated.BlankFragment2"
+        android:label="For test"
+        tools:layout="@layout/fragment_blank_fragment2" />
+
+    <fragment
+        android:id="@+id/f_test3"
+        android:name="com.example.pfeupdated.ui.newOffre.DetailleOffre"
+        android:label="For test"
+        tools:layout="@layout/fragment_offre_detaille" />
+
+    <fragment
+        android:id="@+id/f_accueil"
+        android:name="com.example.pfeupdated.ui.accueil"
+        android:label="@string/menu_accueil"
+        tools:layout="@layout/fragment_accueil" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/f_creerCompteSal"-->
+<!--        android:name="com.example.pfeupdated.ui.creerCompte.CreerCompte"-->
+<!--        android:label="@string/menu_creer_compte"-->
+<!--        tools:layout="@layout/fragment_creer_compte" />-->
+
+    <fragment
+        android:id="@+id/f_listOfOffres"
+        android:name="com.example.pfeupdated.ui.newOffre.ListOffreFragment"
+        android:label="@string/menu_nouveau_offre"
+        tools:layout="@layout/fragment_list_offre"/>
+
+    <fragment
+        android:id="@+id/f_listOfOfAvis"
+        android:name="com.example.pfeupdated.ui.lesAvis.ListAvis"
+        android:label="@string/menu_avis"
+        tools:layout="@layout/fragment_list_avis"/>
+
+    <fragment
+        android:id="@+id/f_parametres"
+        android:name="com.example.pfeupdated.ui.parametres.Parametres"
+        android:label="@string/menu_paramettres"
+        tools:layout="@layout/fragment_parametres"/>
+
+    <fragment
+        android:id="@+id/f_laisserAvis"
+        android:name="com.example.pfeupdated.ui.laisserAvis.LaisserAvis"
+        android:label="@string/menu_laisser_avis"
+        tools:layout="@layout/fragment_laisser_avis"/>
+
+    <fragment
+        android:id="@+id/f_rechercher"
+        android:name="com.example.pfeupdated.ui.rechercher.Rechercher"
+        android:label="@string/menu_rechercher"
+        tools:layout="@layout/fragment_rechercher" />
+
+    <fragment
+    android:id="@+id/f_scanQRcode"
+    android:name="com.example.pfeupdated.ui.QRcode.ScanQRcode"
+    android:label="@string/menu_scan_qrcode"
+    tools:layout="@layout/fragment_scan_qrcode" />
+
+    <fragment
+        android:id="@+id/f_pieChar"
+        android:name="com.example.pfeupdated.BarChar"
+        android:label="@string/menu_pieChar"
+        tools:layout="@layout/fragment_bar_char" />
+
+    <fragment
+        android:id="@+id/nav_compte"
+        android:name="com.example.pfeupdated.ui.myCompte.Compte"
+        android:label="@string/menu_compte"
+        tools:layout="@layout/fragment_compte" />
+
+    <fragment
+        android:id="@+id/f_mesOffres"
+        android:name="com.example.pfeupdated.ui.mesOffres.MesOffres"
+        android:label="@string/menu_offres"
+        tools:layout="@layout/fragment_mes_offres"/>
+
+    <fragment
+        android:id="@+id/f_uploadImage"
+        android:name="com.example.pfeupdated.upload_image"
+        android:label="Upload Images"
+        tools:layout="@layout/fragment_upload_image"/>
+
+    <fragment
+        android:id="@+id/f_offreEncours"
+        android:name="com.example.pfeupdated.ui.OffreEncours.OffreEnCour"
+        android:label="Offre En Cours"
+        tools:layout="@layout/fragment_offre_en_cour"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/f_listClick"-->
+<!--        android:name="com.example.pfeupdated.FLC"-->
+<!--        android:label="List Click"-->
+<!--        tools:layout="@layout/fragment_flc"/>-->
+
+
+
+
+</navigation>

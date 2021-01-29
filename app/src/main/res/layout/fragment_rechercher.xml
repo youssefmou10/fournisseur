@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#fff"
+    tools:context=".ui.rechercher.Rechercher">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Recherche"
+            android:searchIcon="@drawable/search_24"></SearchView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RatingBarBig"
+            android:numStars="5"
+            android:rating="2.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spnVille"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/theone"
+            android:popupBackground="@color/theone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spnCat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/theone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/border_cercle">
+
+            <ImageButton
+                android:id="@+id/saveComn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/flesh_s" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

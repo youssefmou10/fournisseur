@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+<!--        <item-->
+<!--            android:id="@+id/f_accueil"-->
+<!--            android:icon="@drawable/ic_home_black_24dp"-->
+<!--            android:title="@string/menu_accueil" />-->
+        <!-- <item
+             android:id="@+id/f_notifications"
+             android:icon="@drawable/ic_notifications_black_24dp"
+             android:title="@string/menu_notifications" />
+         <item
+             android:id="@+id/f_paramettre"
+             android:icon="@drawable/ic_settings_black_24dp"
+             android:title="@string/menu_paramettres" />
+        <item
+            android:id="@+id/f_rechercher"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/menu_rechercher" />-->
+
+        <item
+            android:id="@+id/f_mesOffres"
+            android:icon="@drawable/ic_image_black_24dp"
+            android:title="@string/menu_offres" />
+
+<!--        <item-->
+<!--            android:id="@+id/f_carte"-->
+<!--            android:icon="@drawable/ic_account_circle_black_24dp"-->
+<!--            android:title="@string/menu_carte" />-->
+<!--        <item-->
+<!--            android:id="@+id/f_creerCompteSal"-->
+<!--            android:icon="@drawable/ic_account_circle_black_24dp"-->
+<!--            android:title="@string/menu_creer_compte" />-->
+<!--       <item-->
+<!--            android:id="@+id/f_activerCompteSal"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_activer_compte" />-->
+<!--        <item-->
+<!--           android:id="@+id/f_seConnecter"-->
+<!--           android:icon="@drawable/ic_menu_slideshow"-->
+<!--           android:title="@string/menu_seconnecter" />-->
+<!--        <item-->
+<!--            android:id="@+id/f_test2"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"-->
+<!--            android:title="testtttt 2" />-->
+<!--        <item-->
+<!--            android:id="@+id/f_test3"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"-->
+<!--            android:title="testtttt 3" />-->
+
+        <item
+            android:id="@+id/f_listOfOffres"
+            android:icon="@drawable/ic_assignment_returned_black_24dp"
+            android:title="Nouveaux Offre" />
+
+<!--        <item-->
+<!--            android:id="@+id/f_listOfOfAvis"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"-->
+<!--            android:title="@string/menu_avis" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/f_parametres"-->
+<!--            android:icon="@drawable/ic_settings_black_24dp"-->
+<!--            android:title="@string/menu_paramettres" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/f_laisserAvis"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"-->
+<!--            android:title="@string/menu_laisser_avis" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/f_uploadImage"-->
+<!--            android:title="UploadImages"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/f_offreEncours"-->
+<!--            android:title="Offre En Cours"-->
+<!--            android:icon="@drawable/ic_assignment_returned_black_24dp"/>-->
+
+
+<!--        <item-->
+<!--            android:id="@+id/f_scanQRcode"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_scan_qrcode" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/f_pieChar"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_pieChar" />-->
+
+       <!--<item
+           android:id="@+id/nav_tools"
+           android:icon="@drawable/ic_menu_manage"
+           android:title="@string/menu_tools" />
+   </group>-->
+
+   <item android:title="Parametre">
+       <menu>
+
+           <item
+               android:id="@+id/nav_compte"
+               android:icon="@drawable/ic_menu_gallery"
+               android:title="@string/menu_compte"/>
+
+           <item
+               android:id="@+id/nav_exit"
+               android:icon="@drawable/exit_24"
+               android:title="@string/menu_exit" />
+
+<!--           <item-->
+<!--               android:id="@+id/nav_share"-->
+<!--               android:icon="@drawable/ic_menu_share"-->
+<!--               android:title="@string/menu_share" />-->
+<!--           <item-->
+<!--               android:id="@+id/nav_send"-->
+<!--               android:icon="@drawable/ic_menu_send"-->
+<!--               android:title="@string/menu_send" />-->
+<!--           <item-->
+<!--               android:id="@+id/nav_logout"-->
+<!--               android:icon="@drawable/ic_menu_send"-->
+<!--               android:title="Log Out" />-->
+       </menu>
+   </item>
+    </group>
+    <!--<item
+        android:id="@+id/f_test"
+        android:icon="@drawable/ic_assignment_returned_black_24dp"
+        android:title="testtttt" />
+
+
+    <item
+        android:id="@+id/f_test2"
+        android:icon="@drawable/ic_assignment_returned_black_24dp"
+        android:title="testtttt 2" />
+
+
+    <item
+        android:id="@+id/f_test3"
+        android:icon="@drawable/ic_assignment_returned_black_24dp"
+        android:title="testtttt 3" />-->
+
+
+</menu>
